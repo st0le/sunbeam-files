@@ -16,9 +16,3 @@ sunbeam extension install https://github.com/pomdtr/sunbeam-bitwarden
 sunbeam files # browse current directory
 sunbeam files ls --dir ~ --show-hidden # browse home directory and show hidden files
 ```
-
-## Code
-
-```bash
-{{#include ./files.py}}
-```
