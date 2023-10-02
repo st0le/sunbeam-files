@@ -1,4 +1,4 @@
-# File Browser (Python)
+# File Browser
 
 ## Requirements
 
