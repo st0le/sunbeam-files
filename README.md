@@ -7,8 +7,7 @@
 ## Install
 
 ```bash
-curl -L https://raw.githubusercontent.com/pomdtr/sunbeam/main/docs/examples/files/files.py > ~/.local/bin/sunbeam-files
-chmod +x ~/.local/bin/sunbeam-files
+sunbeam extension install https://github.com/pomdtr/sunbeam-bitwarden
 ```
 
 ## Usage
