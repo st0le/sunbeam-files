@@ -4,7 +4,7 @@ import sys
 import json
 import pathlib
 
-if len(sys.argv) == 2 and sys.argv[1] == "manifest":
+if len(sys.argv) == 1:
     json.dump(
         {
             "title": "File Browser",
@@ -25,11 +25,10 @@ if len(sys.argv) == 2 and sys.argv[1] == "manifest":
     )
     sys.exit(0)
 
-payload = json.load(sys.stdin)
-command = payload["command"]
-params = payload["params"]
 
-if command == "ls":
+if sys.argv[1] == "ls":
+    payload = json.load(sys.stdin)
+    params = payload.get("params", {})
     root = pathlib.Path(params.get("dir", "."))
     show_hidden = params.get("show-hidden", False)
 
