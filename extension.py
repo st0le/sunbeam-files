@@ -26,7 +26,7 @@ if len(sys.argv) == 1:
 
 if sys.argv[1] == "ls":
     payload = json.load(sys.stdin)
-    workdir = payload["workdir"]
+    workdir = payload["cwd"]
     params = payload.get("params", {})
     root = pathlib.Path(params.get("dir", workdir))
     show_hidden = params.get("show-hidden", False)
