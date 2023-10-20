@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # check if deno is installed
-if ! command -v python3 >/dev/null 2>&1; then
-    echo "python3 is not installed"
+if ! command -v py >/dev/null 2>&1; then
+    echo "py is not installed"
     exit 1
 fi
 
-exec python3 ./extension.py "$@"
+exec py ./extension.py "$@"
